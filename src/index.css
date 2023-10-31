@@ -19,6 +19,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--Dark-Slate-Grey);
+  color: var(--Dark-Slate-Grey);
 }
 .page-conteiner {
   position: absolute;
@@ -72,11 +73,16 @@ label {
   font-weight: bold;
 }
 input,
-button {
+button,
+.link-button {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
   margin-bottom: 1rem;
+}
+.link-button {
+  text-align: center;
+  text-decoration: none;
 }
 .aligne-label {
   display: flex;
@@ -94,11 +100,13 @@ button {
   background-color: #f5d5d3;
   color: var(--Tomato);
 }
-button {
+button,
+.link-button {
   background-color: var(--Charcoal-Grey);
   color: var(--White);
 }
-button:hover {
+button:hover,
+.link-button:hover {
   background: linear-gradient(
     90deg,
     rgba(246, 131, 131, 1) 0%,
@@ -106,4 +114,25 @@ button:hover {
   );
   box-shadow: 5px 4px 20px -5px rgba(255, 98, 87, 1);
   border-color: transparent;
+}
+.success-page {
+  background-color: var(--Dark-Slate-Grey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-table {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  gap: 1rem;
+  text-align: left;
+}
+.icon-success {
+  width: 15%;
 }
