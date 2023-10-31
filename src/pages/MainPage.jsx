@@ -16,7 +16,7 @@ function MainPage() {
       } else if (email.includes("@") === false) {
         setError("The email address is not formatted correctly");
       } else {
-        navigate("/success");
+        navigate("/success", { state: { email: email } });
       }
     } catch (error) {
       setError(error);
