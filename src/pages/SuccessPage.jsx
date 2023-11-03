@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 function SuccessPage() {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="success-page">
       <div className="success-table">
